@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>SalientSys.rtsp-logger.v142.mt</id>
+    <version>1.0.2</version>
+    <authors>Salient Systems</authors>
+    <description>Visual Studio build of the SalientSys.rtsp-logger sources. It is compiled using the v142 Visual C++ toolset and static runtime.</description>
+    <license type="expression">MIT</license>
+    <icon>logo.png</icon>
+    <tags>native nativepackage c++ cpp SalientSys-rtsp-logger v142</tags>
+    <dependencies>
+      <dependency id="SalientSys.poco.foundation" version="[1.7.8]" />
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="lib\**\*.*" target="build\native\lib" />
+    <file src="Proj\**\*.h" target="build\native\include\rtsp-logger" />
+    <file src="readme.md" target="build\native" />
+    <file src="../../../icon/logo-64x64.png" target="logo.png" />
+    <file src="SalientSys.rtsp-logger.v142.mt.props" target="build\native" />
+  </files>
+</package>
