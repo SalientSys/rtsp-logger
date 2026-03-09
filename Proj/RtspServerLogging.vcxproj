@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\SalientSys.poco.foundation.1.7.8\build\native\SalientSys.poco.foundation.props" Condition="Exists('packages\SalientSys.poco.foundation.1.7.8\build\native\SalientSys.poco.foundation.props')" />
+  <Import Project="packages\SalientSys.poco.foundation.1.14.2\build\native\SalientSys.poco.foundation.props" Condition="Exists('packages\SalientSys.poco.foundation.1.14.2\build\native\SalientSys.poco.foundation.props')" />
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -56,8 +56,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="Shared">
-  </ImportGroup>
+  <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -140,6 +139,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ProgramDataBaseFileName>$(SolutionDir)Exes\$(Configuration)Exes\$(Platform)\$(ProjectName)64.pdb</ProgramDataBaseFileName>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -158,6 +158,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -188,6 +189,6 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('packages\SalientSys.poco.foundation.1.7.8\build\native\SalientSys.poco.foundation.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SalientSys.poco.foundation.1.7.8\build\native\SalientSys.poco.foundation.props'))" />
+    <Error Condition="!Exists('packages\SalientSys.poco.foundation.1.14.2\build\native\SalientSys.poco.foundation.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SalientSys.poco.foundation.1.14.2\build\native\SalientSys.poco.foundation.props'))" />
   </Target>
 </Project>
