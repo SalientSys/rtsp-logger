@@ -1,5 +1,5 @@
-#Default owners for the entire repository
+# Default owners for the entire repository
 * @SalientSys/on-premise
 
-#DevOps owns GitHub configuration and workflow files
-.github/ @SalientSys/devops
+# DevOps owns GitHub configuration and workflow files
+.github/** @SalientSys/devops
